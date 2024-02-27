@@ -1,0 +1,38 @@
+.app-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background:transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: #f0e9e9;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 400px; /* Fixed height for images */
+    margin-bottom: 20px;
+    overflow: hidden; /* Prevents image overflow */
+  }
+  
+  .content-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Covers the fixed height area, might clip the image */
+    display: block; /* Ensures no extra space below the image */
+  }
+  
+  .paragraph {
+    background: transparent;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #f0e9e9;;
+  }
+  

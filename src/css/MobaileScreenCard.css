@@ -1,0 +1,55 @@
+/* General styles - applied to all devices to hide the component */
+.card {
+  display: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  .card {
+    display: flex; /* Now the card will be displayed on mobile screens */
+    flex-direction: column; /* Stack image and text vertically */
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(140, 137, 137);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+
+  .card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    color: #cecaca;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    color: #d4d3d3;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .time {
+    color: #c7c3c3;
+    font-size: 0.8rem;
+  }
+}

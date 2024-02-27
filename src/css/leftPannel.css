@@ -1,0 +1,74 @@
+.RightPanel {
+    width: 94px;
+    flex-shrink: 0;
+    background: #1b2333;
+    padding-top: 20px;
+    padding-bottom: 103px;
+    grid-gap: 15px;
+    max-height: 100%;
+    min-height: 160vh;
+  }
+  
+  .icons {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-gap: 42px;
+    margin-top: 91px;
+  }
+  
+  .icons_panel {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+  }
+  
+  .icon-container {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .icon-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #0d1525;
+    padding: 4px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+    font-size: 11px;
+    width: 62px;
+    color: #f2f2f2;
+  }
+  
+  .icon-container:hover .icon-text {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media screen and (max-width: 1157px) {
+    .RightPanel {
+      display: none;
+    }
+  }
+  
+  .highlight {
+    background-color: #6cd97e;
+    /* Green color for highlighting */
+  }
+  
+  .icons_panel.highlight {
+    border: 2px solid #6cd97e;
+    /* You can adjust the color as needed */
+    box-shadow: 0 0 5px #6cd97e;
+    /* You can adjust the color and shadow as needed */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 3px;
+  }

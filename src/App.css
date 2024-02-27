@@ -1,0 +1,21 @@
+.App {
+    background-color: #0D1525;
+}
+
+body {
+    background-color: #0D1525;
+}
+
+html {
+    background-color: #0D1525;
+}
+
+.chattrt {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .justify-start {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,58 @@
+
+  .card-header {
+    margin-bottom: 20px;
+  }
+  
+  .tag {
+    display: inline-block;
+    background: #43db4d;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: black;
+  }
+  
+  h2 {
+    margin: 10px 0;
+  }
+  
+  .card-footer {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Additional styling can be added as per the exact design requirements */
+
+  
+
+  .container {
+    display: flex; /* Use flexbox to layout card and side div */
+    width: 95%; /* Full width of the parent container */
+    background: #1b2333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 65%; /* Card takes up 65% of the container width */;
+  }
+  
+  .side-div {
+     /* Side div takes up the remaining 35% of the container width */
+    border: 1px solid #555; /* Add border */
+    margin: 1rem; /* Add margin */
+    background: #f3f0f0; /* Slightly different background for visual separation */
+    border-radius: 5px;
+  }
+  
+  /* The rest of your styles remain unchanged */
+  

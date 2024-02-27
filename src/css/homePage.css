@@ -1,0 +1,175 @@
+/* App.css */
+.app-container {
+  background-color: #0d1525;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.trending-container,
+.section-container {
+  background-color: #0d1525;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.trending-header,
+.section-header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 24px;
+  margin: 0px;
+}
+
+.trending-content,
+.articles-container {
+  padding: 16px;
+}
+
+.article {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 12px;
+  /* margin-bottom: 12px; */
+  color: #495057;
+}
+
+.article:last-child {
+  border-bottom: none;
+}
+
+.article h3 {
+  margin-top: 0;
+  color: #000000;
+}
+
+.article p {
+  margin-bottom: 0;
+}
+
+.read-time {
+  color: #6c757d;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Responsive design adjustments might be necessary */
+.section-container {
+  background-color: #0d1525;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  font-size: 24px;
+  color: #f0e9e9;
+}
+
+.articles-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the gap as necessary */
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Adjust the height as needed */
+  border: 1px solid #ccc; /* For visual separation, optional */
+  border-radius: 5px; /* Optional, for rounded corners */
+  width: 410px;
+}
+
+.article-card .article-image {
+  height: 50%;
+  width: 100%; /* To ensure the image covers the full width */
+  object-fit: cover; /* Adjust as needed to handle how the image should resize */
+}
+
+.article-card .article-content {
+  height: 40%;
+  padding: 10px; /* Adjust padding as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card h3,
+.article-card p,
+.article-card .read-time {
+  margin: 5px 0; /* Adjust margins as needed */
+}
+
+.article-image {
+  width: 150px; /* Adjust the width as necessary */
+  height: 100px; /* Adjust the height as necessary */
+  object-fit: cover; /* This will ensure the image covers the area properly */
+}
+
+.article-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-card h3 {
+  margin-top: 0;
+  color: #cfc4c4;
+}
+
+.article-card p {
+  color: #d2d6db;
+}
+
+.read-time {
+  color: #babfc3;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .article-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* HomePage.css */
+.app-container {
+  display: flex;
+  min-height: 100vh; /* Full height of viewport */
+  flex-direction: column;
+}
+
+.left-panel {
+  /* Adjust width of the sidebar */
+  height: 160%; /* Full height */
+  background-color: #f4f4f4; /* Example color */
+  /* Fixed positioning if you want it always visible */
+}
+
+.main-content {
+  flex-grow: 1; /* Take up remaining space */
+  padding: 20px;
+  background-color: #0d1525; /* Example color */
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: row; /* Align children side by side */
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.main-content {
+  flex-grow: 1; /* Allow main content to take the remaining space */
+  /* Ensure other styles do not conflict */
+}
+
+.app-footer {
+  width: 100%; /* Full width */
+  /* Other styles remain the same */
+}
